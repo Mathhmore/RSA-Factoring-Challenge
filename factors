@@ -7,7 +7,7 @@ n = 0
 with open(my_file, 'r') as fl:
     for line in fl.readlines():
         a = int(line)
-        for i in range(2, int(a / 2)):
+        for i in range(2, int(a / 2) + 1):
             if a % i == 0:
                 m = int(a / i)
                 n = i
